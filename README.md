@@ -13,3 +13,4 @@
 ### Subdominio genérico
 * Cuenta del Cliente
 * Autorización/Autenticación
+* Rastreo del auto

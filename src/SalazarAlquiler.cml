@@ -7,6 +7,7 @@ ContextMap BookEcommerceMap{
     contains AutorizacionAutenticacion
     contains CatalogoAutos
     contains CuentaCliente
+    contains RastreoAuto
 
     
     /* Patrones de Relación*/
@@ -15,6 +16,7 @@ ContextMap BookEcommerceMap{
     GestionAlquileres [D]<-[U] GestionPagos
     Seguridad [D]<-[U] AutorizacionAutenticacion
     CuentaCliente [D]<-[U] GestionClientes
+    RastreoAuto [D]<-[U] GestionVehiculos
 
     /* Cooperación */
     GestionAlquileres [P]<->[P] GestionVehiculos
@@ -56,5 +58,9 @@ BoundedContext CatalogoAutos {
 }
 
 BoundedContext CuentaCliente {
+    
+}
+
+BoundedContext RastreoAuto {
     
 }

@@ -1,13 +1,14 @@
 digraph "ContextMapGraph" {
 graph ["imagepath"="/tmp/GraphvizJava"]
-"AutorizacionAutenticacion" ["margin"="0.3","orientation"="167","shape"="egg","fontsize"="16","style"="bold","label"="AutorizacionAutenticacion\n","fontname"="sans-serif"]
-"Seguridad" ["margin"="0.3","orientation"="21","shape"="egg","fontsize"="16","style"="bold","label"="Seguridad\n","fontname"="sans-serif"]
-"GestionPagos" ["margin"="0.3","orientation"="44","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagos\n","fontname"="sans-serif"]
-"GestionAlquileres" ["margin"="0.3","orientation"="312","shape"="egg","fontsize"="16","style"="bold","label"="GestionAlquileres\n","fontname"="sans-serif"]
-"GestionClientes" ["margin"="0.3","orientation"="2","shape"="egg","fontsize"="16","style"="bold","label"="GestionClientes\n","fontname"="sans-serif"]
-"CuentaCliente" ["margin"="0.3","orientation"="66","shape"="egg","fontsize"="16","style"="bold","label"="CuentaCliente\n","fontname"="sans-serif"]
-"GestionVehiculos" ["margin"="0.3","orientation"="205","shape"="egg","fontsize"="16","style"="bold","label"="GestionVehiculos\n","fontname"="sans-serif"]
-"CatalogoAutos" ["margin"="0.3","orientation"="331","shape"="egg","fontsize"="16","style"="bold","label"="CatalogoAutos\n","fontname"="sans-serif"]
+"AutorizacionAutenticacion" ["margin"="0.3","orientation"="0","shape"="egg","fontsize"="16","style"="bold","label"="AutorizacionAutenticacion\n","fontname"="sans-serif"]
+"Seguridad" ["margin"="0.3","orientation"="55","shape"="egg","fontsize"="16","style"="bold","label"="Seguridad\n","fontname"="sans-serif"]
+"GestionPagos" ["margin"="0.3","orientation"="239","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagos\n","fontname"="sans-serif"]
+"GestionAlquileres" ["margin"="0.3","orientation"="67","shape"="egg","fontsize"="16","style"="bold","label"="GestionAlquileres\n","fontname"="sans-serif"]
+"GestionClientes" ["margin"="0.3","orientation"="73","shape"="egg","fontsize"="16","style"="bold","label"="GestionClientes\n","fontname"="sans-serif"]
+"CuentaCliente" ["margin"="0.3","orientation"="20","shape"="egg","fontsize"="16","style"="bold","label"="CuentaCliente\n","fontname"="sans-serif"]
+"GestionVehiculos" ["margin"="0.3","orientation"="211","shape"="egg","fontsize"="16","style"="bold","label"="GestionVehiculos\n","fontname"="sans-serif"]
+"RastreoAuto" ["margin"="0.3","orientation"="220","shape"="egg","fontsize"="16","style"="bold","label"="RastreoAuto\n","fontname"="sans-serif"]
+"CatalogoAutos" ["margin"="0.3","orientation"="58","shape"="egg","fontsize"="16","style"="bold","label"="CatalogoAutos\n","fontname"="sans-serif"]
 "AutorizacionAutenticacion" -> "Seguridad" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
@@ -26,6 +27,11 @@ graph ["imagepath"="/tmp/GraphvizJava"]
 "GestionAlquileres" -> "GestionClientes" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
 "GestionAlquileres" -> "GestionVehiculos" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
 "GestionClientes" -> "CuentaCliente" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"GestionVehiculos" -> "RastreoAuto" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
