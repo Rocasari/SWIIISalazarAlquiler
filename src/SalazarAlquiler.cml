@@ -1,0 +1,31 @@
+ContextMap BookEcommerceMap{
+    contains GestionAlquileres
+    contains GestionClientes
+    contains GestionVehiculos
+    contains GestionPagos
+    contains Seguridad
+    
+    
+
+    /* Patrones de Ralación*/
+}
+
+BoundedContext GestionAlquileres {
+    
+}
+
+BoundedContext GestionClientes {
+    
+}
+
+BoundedContext GestionVehiculos {
+    
+}
+
+BoundedContext GestionPagos {
+    
+}
+
+BoundedContext Seguridad {
+    
+}
