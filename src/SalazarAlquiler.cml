@@ -4,10 +4,25 @@ ContextMap BookEcommerceMap{
     contains GestionVehiculos
     contains GestionPagos
     contains Seguridad
-    
-    
+    contains AutorizacionAutenticacion
+    contains CatalogoAutos
 
-    /* Patrones de Ralación*/
+    
+    /* Patrones de Relación*/
+
+    /* Cliente - Proovedor*/
+    GestionAlquileres [D]<-[U] GestionPagos
+    Seguridad [D]<-[U] AutorizacionAutenticacion
+
+    /* Cooperación */
+    GestionAlquileres [P]<->[P] GestionVehiculos
+    GestionAlquileres [P]<->[P] GestionClientes
+
+    /* Conformista */
+    GestionPagos [CF]<-[PL] Seguridad
+
+    /* Open-Host service */
+    CatalogoAutos [U, OHS]->[D] GestionAlquileres
 }
 
 BoundedContext GestionAlquileres {
@@ -27,5 +42,13 @@ BoundedContext GestionPagos {
 }
 
 BoundedContext Seguridad {
+    
+}
+
+BoundedContext AutorizacionAutenticacion {
+    
+}
+
+BoundedContext CatalogoAutos {
     
 }
